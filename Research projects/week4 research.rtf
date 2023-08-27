@@ -1,0 +1,58 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 Jennifer Hermann//  Research Assignment Week 4 //   8/25/2023\par
+The differences between var let and const:\par
+They are all variable assigners but they all have different uses, and "scopes".  Meaning, they can each only go so far for different uses in the code you're writing.  \par
+Var can be used inside a function, or outside a function (inside or outside the curly braces). When its used inside, it only applies to whats happening inside those braces.  While outside, it can be used by the whole program and is available everywhere in the code.  This is referred to as "globally scoped"\par
+Let and const, when used inside the curly braces like inside a loop or an if statement, are only available, and useable inside that part of the code, or that "block", so they're called "block scoped"\par
+The value of a const declared variable cannot be changed in the following code, after its already been named.  The only way you can change it is if you go back to where you first named it and change the value and also the variable assigner to either let or var. \par
+Source  Chat GPT {{\field{\*\fldinst{HYPERLINK https://chat.openai.com/ }}{\fldrslt{https://chat.openai.com/\ul0\cf0}}}}\f0\fs22\par
+and \par
+MDN {{\field{\*\fldinst{HYPERLINK https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_Types#declarations }}{\fldrslt{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_Types#declarations\ul0\cf0}}}}\f0\fs22  \par
+\par
+What are the differences between callbacks and promises?\par
+Callbacks and Promises both can be used to code through events happening that are happening at different times, or asynchronous. (callbacks can also be used in synchronous code, when used immediately after the initial function, and without any other task happening in between) A callback is a function within a function, basically. "A callback is a function that gets passed into another function as an argument" (MDN)   They can be hard to read in coding and can get messy when there are many operations nested together. When you need to fix something in your code and its written with callbacks, it can be difficult to decipher and find the issues to debug. Promises are not a function, but an object, or value, that may or may not be available in the present or future. They help better structure operations in asynchronous events in code, and can have callbacks attached to them. They either resolve or reject and operation.  When resolving its called a result, and when it rejects its called a catch, or an error--it gets printed as an error on the console.  \par
+Source:\par
+  Chat GPT {{\field{\*\fldinst{HYPERLINK https://chat.openai.com/ }}{\fldrslt{https://chat.openai.com/\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises }}{\fldrslt{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://developer.mozilla.org/en-US/docs/Glossary/Callback_function }}{\fldrslt{https://developer.mozilla.org/en-US/docs/Glossary/Callback_function\ul0\cf0}}}}\f0\fs22\par
+\par
+What are some new features introduced in ES6?\par
+First introduced in 2015, ECMAScript2015 introduced lots of improvements to the javascript language, and has been expanded on each year.  There's too much to mention and name in one paragraph, but in the scope of what we've learned so far in this class, I will name a few that we have covered:\par
+\ul Arrow Functions\ulnone - Also known as a fat arrow function,  it is a simpler and more succinct way to write functions. You can even drop the return keyword, to automatically have a value returned if it fits on one line.\par
+Example of simple syntax:\par
+() => expression\par
+\ul let and const\ulnone - newer variable declarations that are block scoped, and replace the var  declaration. Let is reassignable while const remains constant and cannot be changed. \par
+\ul Template literals \ulnone  - are an alternative way to write longer strings and expressions that need to be intertwined with variables, values and expressions. It makes the code syntax more readable in a literal, grammatical way. They are denoted by backticks `like this` and the symbols $\{...\} are used to place any values, variables or expressions withint the line of code.  You can also use template literals to write multi line strings without having to denote a new line.\par
+\ul Promises\ulnone  (as defined above) Promises are not a function, but an object, or value, that may or may not be available in the present or future. They help better structure operations in asynchronous events in code, and can have callbacks attached to them. They either resolve or reject and operation.  When resolving its called a result, and when it rejects its called a catch, or an error--it gets printed as an error on the console.  \par
+And many more that we haven't learned about yet!\par
+Sources: \par
+{{\field{\*\fldinst{HYPERLINK https://chat.openai.com/ }}{\fldrslt{https://chat.openai.com/\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals }}{\fldrslt{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const }}{\fldrslt{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let }}{\fldrslt{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let\ul0\cf0}}}}\f0\fs22\par
+\par
+What are the common use cases for higher-order functions in JavaScript, and how do they enhance code modularity and reusability?\par
+High order functions are functions that ca n return another function, a function within a function.  Callbacks are one example of this. They allow you run functions that happen at different times.  Modular means that  you can break a program up into smaller pieces of code , and put them back together to do different things. Each piece does a different action, so you can use those pieces to build more sophisticated, and varied functions and operations in your code.  These building blocks can make your code easier to read by any other developer, and can help future code to be written on the same basic principles . They're also easier to debug, because each piece is less likely to affect the whole program.  Function composition, Array iteration,  Abstraction of Behavior, Dependency Injection, and Currying and Partial application are all examples of common use cases for high order function, that do different things to enhance your code.\par
+source: \par
+{{\field{\*\fldinst{HYPERLINK https://chat.openai.com/ }}{\fldrslt{https://chat.openai.com/\ul0\cf0}}}}\f0\fs22\lang1033\par
+\lang9 What are pure functions? How do they contribute to code predictability, testability, and ease of debugging? \par
+Pure functions are ones that don't have anything outside the function that can modify the action of the function.  They will always produce the same output, given the same input, so they are vastly more predictable.  They are good practice in coding, whenever possible,  because they are more straightforward and  less likely to be corrupted by outside, possibly hidden modifiers, and  are easier to test. Debugging is made simpler with pure functions because they don't cause any changes, or side effects to the rest of the code in your program. You can simple replace the function with its result to simplify it.  YOu can use pure functions as parts of a whole, to improve modularity because they are clearly separated as individual entities that can be pieced together to build high order functions. \par
+source: \par
+{{\field{\*\fldinst{HYPERLINK https://chat.openai.com/ }}{\fldrslt{https://chat.openai.com/\ul0\cf0}}}}\f0\fs22\lang1033\par
+\lang9\par
+How can objects be used to store and organize data in JavaScript, and what are the advantages of using objects over other data structures like arrays or maps?\par
+Objects in Javascript are a basic building blocks that combine a key word and one or more assigned values. They can be better to use instead of arrays or maps because;\par
+ they can be more flexible and descriptive;\par
+ can be made up of values of any type, like functions or other objects;\par
+can be assigned descriptive key names to improve readability and maintainability;\par
+can be made longer and more descriptive as needed;\par
+operate more intuitively than arrays or maps. \par
+source\par
+{{\field{\*\fldinst{HYPERLINK https://chat.openai.com/ }}{\fldrslt{https://chat.openai.com/\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects }}{\fldrslt{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects\ul0\cf0}}}}\f0\fs22\par
+\par
+\ul\par
+}
+ 
