@@ -43,7 +43,7 @@ class Item {
     deleteItem(category, index) {
         index -= 1;//<-need this because array starts at 0
       if (index >= 0 && index < this.categories[category].length) //this checks to see 
-      //if the items position really exists int he index
+      //if the items position really exists in the index
       {
         this.categories[category].splice(index, 1)//if it exists, the splice keyword removes the item
         console.log(`Item deleted from ${category}`)
