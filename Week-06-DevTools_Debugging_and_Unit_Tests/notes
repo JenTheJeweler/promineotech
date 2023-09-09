@@ -1,0 +1,123 @@
+//PLAYER
+    /*name: string
+    cards: []
+    score: 0*/
+    // Define Player objects
+const player1 = {
+    name: "Player 1",
+    hand: [], // An array to store the player 1's cards
+  };
+  
+  const player2 = {
+    name: "Player 2",
+    hand: [], // An array to store the player 2's cards
+  };
+  
+  // Example: Dealing cards to the players
+  const card1 = myDeck.deal(); // Assume myDeck is your deck object with a deal() method
+  const card2 = myDeck.deal();
+  
+  if (card1 !== null && card2 !== null) {//null means if there are no more cards to deal
+    player1.hand.push(card1); // Add the dealt card to Player 1's hand
+    player2.hand.push(card2); // Add the dealt card to Player 2's hand
+  }
+  
+  // Display the players' hands
+  console.log(`${player1.name}'s hand: ${player1.hand.map(card => card.toString()).join(', ')}`);
+  console.log(`${player2.name}'s hand: ${player2.hand.map(card => card.toString()).join(', ')}`);
+  
+ 
+  
+
+
+    //GAMEPLAY/DEALER
+    /*List: [] Players (2)
+    List: [] Deck
+    
+    start()
+    While loop for user to start game
+    createGame()
+    // Function to start the game
+function start() {
+  // While loop for the user to start the game
+  let playGame = true;
+
+
+    createGame()
+    Instantiate 2 Players
+    Instantiate and build Deck
+    
+    Give 26 cards to each Player
+    "If the deck of 52 cards is split between the two players, then each will only have 26 cards/turns. 
+    So instead of a "While" loop, I used a "For" loop (i=0; i<26; i++)""--Milton Aineruhanga--from Slack!
+    
+    Loop through all 26 cards and determine which value is higher. Then assign 1 point to winning card of Player 1 or Player 2
+    Display winner - higher score
+    note: could separate into multiple methods
+    */
+    function start() {
+        // While loop for the user to start the game
+        let playGame = true;
+      
+        while (playGame) {
+          createGame();
+          // Ask the user if they want to play again and set playGame accordingly
+          playGame = confirm("Do you want to play again?");
+        }
+      
+        // Game over message
+        console.log("Thanks for playing!");
+      }
+      
+      // Function to create and play the game
+      function createGame() {
+        // Instantiate 2 Players
+        const player1 = {
+          name: "Player 1",
+          score: 0,
+          hand: [],
+        };
+      
+        const player2 = {
+          name: "Player 2",
+          score: 0,
+          hand: [],
+        };
+      
+        // Instantiate and build Deck
+        const myDeck = new Deck();
+      
+        // Give 26 cards to each Player
+        for (let i = 0; i < 26; i++) {
+          const card1 = myDeck.deal();
+          const card2 = myDeck.deal();
+      
+          if (card1 !== null && card2 !== null) {
+            player1.hand.push(card1);
+            player2.hand.push(card2);
+          }
+        }
+      
+        // Loop through all 26 cards and determine which value is higher. Then assign 1 point to the winning card of Player 1 or Player 2
+        for (let i = 0; i < 26; i++) {
+          const card1 = player1.hand[i];
+          const card2 = player2.hand[i];
+      
+          if (compareCards(card1, card2) === 1) {
+            player1.score++;
+          } else if (compareCards(card1, card2) === -1) {
+            player2.score++;
+          }
+        }
+      
+        // Display the winner - higher score
+        if (player1.score > player2.score) {
+          console.log(`${player1.name} wins with a score of ${player1.score}!`);
+        } else if (player2.score > player1.score) {
+          console.log(`${player2.name} wins with a score of ${player2.score}!`);
+        } else {
+          console.log("It's a tie!");
+        }
+      }
+    }
+   
