@@ -51,8 +51,8 @@ CARDS 52
               
               for (let suit of suits) {
                 for (let rank of ranks) {
-                    let value = ranks.indexOf(rank) + 1
-                  this.cards.push(new Card(suit, rank, value));
+                let value = ranks.indexOf(rank) + 1
+                this.cards.push(new Card(suit, rank, value));
                     }
                 }
               }
@@ -111,8 +111,8 @@ function start() {
   
       // Check if both players received cards (the deck is not empty)
       if (card1 !== undefined && card2 !== undefined) {
-        player1.hand.push(card1); // Add the dealt card to Player 1's hand
-        player2.hand.push(card2); // Add the dealt card to Player 2's hand
+      player1.hand.push(card1); // Add the dealt card to Player 1's hand
+      player2.hand.push(card2); // Add the dealt card to Player 2's hand
       }
     }
   
