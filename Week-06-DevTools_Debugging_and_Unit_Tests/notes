@@ -116,7 +116,7 @@ function start() {
         } else if (player2.score > player1.score) {
           console.log(`${player2.name} wins with a score of ${player2.score}!`);
         } else {
-          console.log("It's a tie!");
+          console.log("You both win!");
         }
       }
     }
