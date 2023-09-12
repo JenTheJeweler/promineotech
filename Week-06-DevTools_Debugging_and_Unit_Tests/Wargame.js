@@ -106,8 +106,9 @@ CARDS 52
         
         const myDeck = new Deck(); // Create a new deck of cards
         
-        let card1;
-        let card2;// I declared these here to try to make them stop throwing
+        // let card1 =
+        // let card2 =  
+        // I declared these here to try to make them stop throwing
         // undefined/null errors.  
         //I don't know how to fix this.
 
@@ -116,11 +117,11 @@ CARDS 52
             if (myDeck.cards.length === 0) {
                 break; // Stop dealing cards if the deck is empty
             }
-             card1 = myDeck.cards.pop(); // Deal a card to Player 1
+             let card1 = myDeck.cards.pop(); // Deal a card to Player 1
              if (myDeck.cards.length === 0) {
                 break; // Stop dealing cards if the deck is empty
             }
-             card2 = myDeck.cards.pop(); // Deal a card to Player 2
+             let card2 = myDeck.cards.pop(); // Deal a card to Player 2
             
             //.pop
         // Call createGame with the current players
@@ -128,15 +129,15 @@ CARDS 52
             playGame = confirm("Do you want to play again?");
                 }
             console.log("Thanks for playing!");
-            // Check if both players received cards (the deck is not empty)
-            if (card1 !== undefined && card2 !== undefined) {
+        //     // Check if both players received cards (the deck is not empty)
+        //     if (card1 !== undefined && card2 !== undefined) {
                 player1.hand.push(card1); // Add the dealt card to Player 1's hand
                 player2.hand.push(card2); // Add the dealt card to Player 2's hand
-            }
+            
         // Compare the values of the cards in each player's hand to determine the winner of each round
-        for (let i = 0; i < 26; i++) {
-            let card1 = player1.hand[i]; // Get a card from Player 1's hand
-            let card2 = player2.hand[i]; // Get a card from Player 2's hand
+        // for (let i = 0; i < 26; i++) {
+            card1 = player1.hand[i]; // Get a card from Player 1's hand
+            card2 = player2.hand[i]; // Get a card from Player 2's hand
             
             // Compare the values of the cards and update the scores
             if (card1.value > card2.value) {
@@ -144,7 +145,7 @@ CARDS 52
             } else if (card1.value < card2.value) {
                 player2.score++;
             }
-        }
+        
         // Function to create and play the game
         function createGame() {
             // Loop for each turn (each card dealt
@@ -152,7 +153,7 @@ CARDS 52
               let card1 = myDeck.deal();
               let card2 = myDeck.deal();
           
-              if (card1 !== null && card2 !== null) {
+            //   if (card1 !== null && card2 !== null) {
                   player1.hand.push(card1);
                   player2.hand.push(card2);
                   //this *should* print both players cards....(i don't understand why it isnt!!!)
@@ -175,9 +176,9 @@ CARDS 52
     } else if (player2.score > player1.score) {
       console.log(`${player2.name} wins with a score of ${player2.score}!`);
     } else {
-      console.log("You are both winners!");
+      console.log("Tie, no points");
     }
-  }
+ b v                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
   
   start() 
   // *should* start the game

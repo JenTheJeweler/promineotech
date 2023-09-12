@@ -115,9 +115,8 @@ function start() {
           console.log(`${player1.name} wins with a score of ${player1.score}!`);
         } else if (player2.score > player1.score) {
           console.log(`${player2.name} wins with a score of ${player2.score}!`);
-        } else {
-          console.log("You both win!");
+        } 
         }
-      }
-    }
+      
+    
    
