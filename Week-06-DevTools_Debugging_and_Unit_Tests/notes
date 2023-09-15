@@ -120,3 +120,7 @@ function start() {
       
     
    
+// Call createGame with the current players
+        //  createGame(player1, player2);
+        //     playGame = confirm("Do you want to play again?");
+        
