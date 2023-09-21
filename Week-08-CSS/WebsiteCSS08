@@ -1,0 +1,47 @@
+<!-- Style the website you made last week using CSS with the following requirements:
+Use only external CSS file (no internal or inline styling)
+Every element must be styled.
+Create style rules using class, id, and element selectors. -->
+
+body {
+    background-color: teal;
+    color: black;
+    text-align: center;
+}
+
+h1 {
+    text-align:center;
+}
+nav a {
+    display: block;
+    text-align: center;
+}
+table {
+    margin: 0 auto
+}
+table + p {
+    text-align: center;
+}
+form {
+    margin:0 auto;
+    text-align: center;
+}
+ul {
+    text-align: center;
+}
+ul li {
+    text-align: center;
+}
+ul li a[href^="mailto"] {
+    display: block;
+    text-align: center;
+}
+ul li a[href^="https://www.instagram"], ul li a[href^="https://www.facebook"] {
+  display: block;
+  text-align: center;
+}
+
+
+
+
+

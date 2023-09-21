@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Week 07 Coding Project HTML</title>
+  <link rel="stylesheet" href="WebsiteCSS08.css">
+</head>
+<body>
+    
+    <h1>Resume</h1>
+
+    <div>
+        <a href="Homepage.html">Home</a>
+    
+        <a href="Portfolio.html">Jewelry Portfolio</a>
+      
+        <a href="Resume.html">Resume</a>
+    </div>
+
+    <iframe src="https://onedrive.live.com/embed?resid=21E025191555FF0A%21632&amp;authkey=%21AEAQ4DErSI8TNOU&amp;em=2" width="800px" height="1200px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+
+</body>
+</html>
