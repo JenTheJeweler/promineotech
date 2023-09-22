@@ -1,0 +1,78 @@
+/* <!-- Style the website you made last week using CSS with the following requirements:
+Use only external CSS file (no internal or inline styling)
+Every element must be styled.
+Create style rules using class, id, and element selectors. --> */
+
+body {
+    background-color: rgb(204, 204, 191);
+    color: rgb(4, 20, 20);
+    text-align: center;
+}
+
+
+h1 {
+    font-style:italic;
+    font-style: oblique;
+}
+.image img {
+    display: block; 
+    margin: 0 auto; 
+    box-shadow: 5px 5px 10px 10px rgba(117, 43, 117, 0.3); 
+    
+  }
+  #paragraph{
+    color:rgb(117, 43, 117)
+}
+
+/* div1 {
+    color: rgb(117, 43, 117);
+} */
+h2 {
+font-style: italic;
+}
+nav a {
+    text-align: center;
+}
+table {
+    border-radius: 25px;
+  background: #16a390;
+  padding: 20px;
+  width: 800px;
+  height: 150px;
+  box-shadow: 5px 5px 10px 10px rgba(117, 43, 117, 0.3);
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+form {
+    text-align: center;
+    margin: 10
+}
+
+ul {
+    width: 100%; 
+    padding: 0; 
+    list-style-type: none; 
+    text-align: center; 
+  }
+  ul li {
+    display: inline; 
+    margin-right: 10px; 
+    color: rgb(117, 43, 117); 
+  }
+
+  h3 {
+    font-style: italic;
+  }
+
+
+
+
+
+
+
+
+
+
+
