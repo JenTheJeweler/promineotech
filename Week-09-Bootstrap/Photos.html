@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 09 Bootstrap</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<style>
+    body {
+            background-color: #e7e9dd; 
+        }
+    .custom-bg-color {
+        background-color: #4b26b3;
+    }
+    .custom-text-color {
+    color: #e7e9dd 
+    }
+    
+    .custom-padding {
+    padding: 20px; 
+    background-color: #6c757d 
+    }
+
+</style>
+<nav class="navbar navbar-expand-lg bg-secondary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">HOME</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Important Information</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown link
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Photos</a></li>
+              <li><a class="dropdown-item" href="#">About</a></li>
+              <li><a class="dropdown-item" href="#">Important Information</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class ="container">
+    1<img src="https://lh3.googleusercontent.com/pw/ADCreHe9rfJPFb3edGTOewEQBp0x-AI3RuBzncmPA2EJodr7xyyCjQGTIwA_9UU_nrT3XUqMJ6tSo9Q2e5qBDPv7FJMChAFoAJyZkHsGodylV3esxIEv5qMCaXxqZoJ1s7P7tlxXXWj_-LEjag4Poj31Goyspsgdt0wy70RLeox4vmBR7-WmzK5G3A3BR-2maYhuSi2NJv8LA7T3W87FDTEq3mwGa8WDPRS3FDE_iKdn3t3eSt81rpUrmCwf17i1S7p9TpIA9Cq0sassa0t1v9u4fd4ipOpRjfefRBfYBWkBQEMaq7D6j7mKjwjitNPco6pvU2aRekddg7xPToygnRw52QrlNGWJcQ7DIJoX8MYWto2hSRVtBE9LhNFWx3wG3Y3mwKMKHY09bcTgNqqeY953qm1gb7gCcwKpMbMT950n-0ASeWB9aG81NEqDr3xEOmETVjHgYFuqKj78PjNc5yLBvvcpBIQxp4Zk7P_6QayoYhgsjE73wG7gGnDaHXeHy8arZW443zbsxk9aCGeNbSjZOsdA3bshvWP5iT40bY5s9q5oBfaBYssAiBWN6fZkMTrUB__EBp-G5QMUZt_IK-_xkZWu0cyXq553CJs6vwDFui9VxfHXzwxQ_zKPjwmbsy-Exm4i47pykWC8iOHgQbaDJJi4W9CN8HiqX1NRnPddZ69XI74zHm-Gb8E5AlSfrT0NKZov97P6D9ttYEa9ifqNKh1K3K3Tq4hwnDKIri9EczMfJCC3ZhrBUhYNZjv-qs8T_HAhHsr5oA87YAfHYKJzuEYbYssUzbo7DZkJMPcgfcLzM5WAfycXXUokwgHZdb0BaKXpJ8Hmwq_N7mbvgKjehmz82x1UsMj2-7pePiWb_GJBGfEPW5YJe9bPXx7Wn55CTUuBBtfgteg9GpHXMewIpsj84zQ=w671-h894-s-no?authuser=0 "
+    class="img-fluid mx-auto d-block border border-secondary p-4 custom-padding rounded mx-auto d-block"
+    alt= "Rocco, tan/golden dog curled up sleeping with his frito-foot in his mouth. He is wearing a blue collar ">
+
+      2<img src="https://lh3.googleusercontent.com/pw/ADCreHemtuHGilydhlj7FefPvEYkhuMP2AnjTfEY6OFFCAvwvtPPh2tenbyT5HYWvSaqR0TMf23c7nEVtQrn7CV9OtyB1q4ILYj1xJpODq7VUapKZl9eAZeOQBm8VruSQNs2wItWotjuJSVgnbRrm2ABlvPrpjbH-oxzfHm7zl6R8k_Ezq0YxEnwNMSiI2K3JLUIowXMFhZJUpcTc8ZNN9p28AP3jpd6FFW0FvFKGqx7CNk1l9yU_7IejSAN-AFaq5TSI0yv7dYp5U3BS54fM7E0td3LmR5VskeSson2WTBRE_vcyEpDtpLbusnAtZRI0y7ho2xno5vSDQAE7c4zg4Lgm_qRL1B6NflDitV3a2koIzhg8Gj6G8jogL0t8-wX5vBkRPN1M93ZjMc4-5rgcWmA8_h4_nCmoZXbQZLupyXICqZHeiQsSXRqS2xwdREGPEOLWHmZPHdUCRrZgIXhSs3O2tKE1_sCUbNOVNBHDCsl8wp6QeJ9ao8W1wZNDgLO8Bvua5Aj53pvFPMTeb67-ajf3Oqkn99ow2ffU9Ik9hT4qtHBdDAataCZVEpGhYKFHTvGbozYRpVhQAn8ZBCvtkLC5KMgPDo_rOR2t-NudJGeNr0WtEDHPV0NIJyRsik0ikLIV77fxc9DcSPiL7EnDAzctji5YuZ8YtwsRz0yI9NWzrsn4o-B_gtqXWe4CKea5JGSoVpkBt3c3htVMogVfhhJXxxsWJ4WeF2x66AVQzhdnlQBcu-sdXUPG1hNCE2nkTWnqUVX819kPuLsTeuLz7VbXXRb-ySBL-Xnvnu0NjJrx-eyKrPt1vWGvntZNknEgepNmQuTpVUfzvwMoMAPFi2VA8ebgNfqTFuh-TXgydZPE5UaOAUHkTSR2ft1qyCK4wBMruQ6k6abL2d4Uf3w9pH3OVqn4g=w879-h659-s-no?authuser=0 "
+    class="img-fluid mx-auto d-block border border-secondary p-4 custom-padding rounded mx-auto d-block"
+    alt= "Rocco, laying in grass, photo shot from below him, blue sky and vegetation behind him, his eyes are alert as he looks for critters in the yard">
+     
+     3<img src="https://lh3.googleusercontent.com/pw/ADCreHetUIIqauYjll_b_3uRUUA5tsANpLiLOaxg3XpI_u4NJ7pTVIqooSR1FEpXItRN6yHKKB7H3aUZLKWWSO_KBLydqG-75jz_EXJDepri4EJKDpCI9yePxdtrpMPs1kSwqFBhYcozUeIs_3C7O67XBIJoxf7cjhKrzLalFx07ozRxV58pS_jURtGeF2HEj97oM4nXo9XIo1_lZx7BsEt00Ygcr6u-kmcBW3N63RoZtbJqwHxZ6A2-A0okl3bhI-GJjIPRKcQ80x5BDVUsRceEsH2yFqnpZ_aANAYpRXsl2qpeEsImtIEeg0UuB7uCug-e5rCZ54Nch9y7ixcXDr-GRgExNDOUD5nYJ0ZHRW27VvqXA4bnG1iEQ2FhR-DnCLB39mSd27liBuVbEnqRGZaIJGHKHdRaI75BrZfAnmEB87qnNimcjl4M2Qtg_qwHMzKd1nPn0MVvM58sZDg8-8H8-U7SekKFykTo6VSc532qKsn-Cz8p1XflzcpxQndBq3Ch5ksi-KofM36Kzcl46cqlEgx2eyItfuHtPgSwoH6UjCtB4Tfu0G467Qlga36pvQQLw8W1ROmoLqxmqhEava0W03ff1HaM6yw7ZJcvomYCIs-7Fi-F1pdKs7GOuJGLMG-1lQpzDMezSsJwJ3QiD0vCiTvZ8zjdCeDiS3ZBEoC8MSMpAKpENX4EBXxilKV_CMmovD47YO4VPbWhmfO4pTJtAPOoqW5rw8Hze2HUtiXF26oktk0W6AtF6_M9p_qjFZfrZkEXUPW8Oj27pbKQ8HN54PbrT_Z_denBKPIpbcvbpGBInZXgLEKcVjUutj7sQpwPtH662p2LwTFKnmxRG2FGnBWwjRPS6hoY0fqXjGnXbyVdUdLJX9NbJG2Ibawa9c71WMejlXZs5s-nB_WGNcxA4T_YRA=w671-h894-s-no?authuser=0"
+    class="img-fluid mx-auto d-block border border-secondary p-4 custom-padding rounded mx-auto d-block"
+    alt= "Rocco sitting on a bed with a newborn baby, and mother looking up at the camera, shot from above.  Rocco gazes straight ahead at a brightness, probably a window. The baby is swaddled and sleeping peacefully ">
+
+     4<img src="https://lh3.googleusercontent.com/pw/ADCreHceKZqNzKch85XUyPBDUjgs24eYGGTDSIE_bVEIUwuusuyTESHw7CQHx-AjSsNhGAaH-es8MeDVum4MY-GunI0P4Y9VRpyG72pEq7s7ZeEO0GCENNlNuSqMEjsv5msG9v05Edcn4OmQzuoZh-7hES07Z7_TW94tYc5SLi3OeBJ6eSfwVJi-UodpViKA7Hq0rNhiPubxMDLmxTmw9cY4gmuXv4hQAkqoq_eDkG7PhYn7cgjbRr-jNr9pW48eAGj4K-akDbSf9slQv9OlvOK08wmxhUt8HAhF72hZV99CHLJUeKkA6F8Pd_MV1bbM1gb7PfZv8uFaPyv9rWLLFjpTOBTQUQSNzQJ408D3hutktJ8mb7ij6SwtUmKETGbRFK_D-3S7ltUBWL9H1ECvgrBBS6BCMbJQtyJkqa6cL_qAfHphg8ccCZw_9kH69X-Hj0M06wTgcjfol_fE12qIplgiPIiFZy40JhAko3pfJRu30ZOL-2fZNxRDv-lpF1CZ9nK1B70azlZYoo1NBz-t3n7d-jiCdOgpJxd9tcukB2FW1UJxqtbBjciOEV1wCl5vnHqrHtYSj0Zn_jAmC3fZSx_s1Fi3zbsDvISzHHlE8wXLkE_FVw_EbuVRGuQlkWkHs76RZMX5maSOMJy6AyF31Rhe3sNv4PnINksfEz0QziK0hwGatxAXlUlk3j2Zj4qDsHMKUZMpVjKl_rqQzmli42szDPiY0nixNGzfS7KGaHUomgmUMAHQBIgTx6RHHVzwSbnKQaEziUkR-Oe_zpJYDjSdN87U2CKWKdikZVGtY2AHOiVraaojj3FrnmLqRBg7GxuR5lCvD8dmIKalisvARdP0eGm3sYALP5kpUtHVzK53FORHkjdMPb4tr5CGmNK2crCGh0AUIvFC30-6nqKkd3wjM5x0GQ=w879-h659-s-no?authuser=0 "
+    class="img-fluid mx-auto d-block border border-secondary p-4 custom-padding rounded mx-auto d-block"
+    alt= "Rocco laying on a bed, with blankets and sheets, with a small baby, in a cloth diaper, is cradled over his belly, head resting in the crook of his hind leg. Rocco is fast asleep, the baby looks to be stirring, as one leg is blurred in the photo. ">
+     
+     5<img src="https://lh3.googleusercontent.com/pw/ADCreHcMqHO42iGWiANOzamx7Icw8EofdoCtTOXsiVb_ZfmjRkJoOSMvQxcYJr6hYm0-UR_sVflsHqqNW7GjXHdej977tcb8EJch8sAEClXIQG_VnpVj9fiDzZJc6BnIAi3LT6a_wGs_77AVujEIGdoIvOyYsdzFJCA72QR5UKhgt0l9AoI0LRQe-wjrDJTtOyckC8kGV-156MC33FXFl5QATITVHlFKtvuPf_WSBTD81Np4gEBwQGYNROMveIxgcSR-3U9RdQ98O0NK8h1SjOA99TmQVayJcJRL8XBZiFStXWDIq0s24sYbG6VRSS4lmqPZ52RAraLVVGQwehIDhCr97nkswKoBxODfGsw72Gkk63-CzNDfNwAoXf3IP5Cr6unRqNh_OrewPSsStWT9AO7jO-hRjAs2IP8fTsrSqsXq2tyiqefLYRQWq3ltITMCt5H6jHWgLH044TBl9GvpmEw1p1lf3k81NOgxq8_h_QYJ0JI0JNhfhcP4P14vAltdE6mH3pu_-LnkIETYOBfkmlTednsoGkT9N1XuDUhjRSt7LaSJs3Jgt91ZBLLVpOiExje2w1VpfJVJ9LHcRhGCDZ9OD2ZELtoF8HAU4kbryT4wH0vGZReSlxs13z9B_Ru1eNL9WET7v6OGdEDlhwB7FCLIUAtyFJP_hjch47FdjUB0cK9McCM0IiqfYN8UEZeFlnQU-20AyhKwJLwsU74S2rle92MJJeuI5-hMSAp9lVDha1DfVHg-tPSjLtB7_bwrV44v2wCNVJrzRs17FmhwzTzUuJiOCotRUoeGO-sD-vu9pU1MhHhxlqsi_cNihDjyIOTfNrCX33qhIeVf4w_eBg5wOPdyrsR0VviwLXmOAFuWPzO-GFs5oCLq1pu3N-zkllA_2_-ksf5xMBBMY-nrGXBUoVeWXWc=w879-h659-s-no?authuser=0"
+    class="img-fluid mx-auto d-block border border-secondary p-4 custom-padding rounded mx-auto d-block"
+    alt= "The same baby, a little older, doing tummy time on a blanket on a kitchen floor.  Rocco's face is in the foreground, as he lays, with his attention towards the baby.  The baby looks at the camera. Light shines through a window behind them and they are on a quilted blanket ">
+     
+     6<img src="https://lh3.googleusercontent.com/pw/ADCreHe7szAO64VPrwlE9Lap3_p_qlwdB3wp5f23mZI5hj2ycEte5dZMXbJgpYl7bewpGLEbEjAB_zbY6N2IJbrLqZ8XK4FDISdQsnNbGZrz6L6B2_2aw-fFPEAtHb7F2681doAs9XmZq_FcVyrpT0IXovYX-lMVMV_J1X_TI5VRAvxFA_-KwBtlOPVDSDNvDEDgU6py4bGQiYC2NnFMRbzujU6I1-5t4kepmd0q2-6-q8HH4LC_jbe59dLMskbB6lb8H835PVFGe7-hVsvRSlTFxd6aPHY-ZRgzAe6deQh1AF9n1pcvXZ76oWVRIG975E0Es18cZoLhUKhhWluTXPXn7p7fYEtg4ktKcoznvz5rWZLyTKkS3nh572JMtWAgpJsn4q1FvhKUdb_dYS9HeS_-Pg3B5NFPskyz8zdy9uK6IcSu-SowNn-OdqSmT4W2rQO4UV-ZaZBVpE3bfKWZ78PXS9IVmcj1YHriongvg2R7Y6Rzfqc75IPKuH7Y0IkESYCNZohUMa-r611EWr2Uu-tpip5U-82RtLNMcb0-h4livzWbixnmD4vU3YsKrHJpwkeCEB8LT3wSkVxdrDqfysKoLkT4haOMOWs1PPLxiR93_18r1DPkbFA0KtA8cIg-V956ihMU7Mswg51uSW2kqLsuw62aSdSDEj8DeZM-dZ_-xNWliXYja7ODdq8HlNiTFl4MSKukdiFXZUdtp4vZHpcmRVQG_lt3uLYAPMkLa4qGwczHifw6W8Qf9UCf2i3NMQCkaqqKTMRX8qyy9v-g_GQarCE88x-MO_W95z3YFHMpdIobYGSbNha9_h7D6xGCLuKjp7eVouDiOuQIGtto4cBeuCRhnMhzDUP_9l-DbhF7NjtHsgi_hJIqgFEwqN2YPe5JKIQbDUMTaCEUp01AMIiwRHM8Cg=w879-h659-s-no?authuser=0"
+    class="img-fluid mx-auto d-block border border-secondary p-4 custom-padding rounded mx-auto d-block"
+    alt= "Rocco laying on the edge of a bed, with his foot dangling over the edge, as he pensively looks out a window, like he is wishing to go outside. His ear is flipped inside out and is bent back ">
+     
+     7<img src="https://lh3.googleusercontent.com/pw/ADCreHc9N-84WSrMOQbMp12O2bt5zSEnX4DhrsUDPRbwcOVfa5T3V8JenYAmg1HV0s070CNXNUrZOVxFU7VYRdrrVcTGUL_rTfwmm5YBXdWYDDFlYIwTiTvqPS0-cOE7tGwTjFNn5Wt56Pr6hWuiYGd4kUXbA0e6_BHnVTdmcJxnLpNp_EQWx5euLnz3bozIzaOq-4bbjh9ImSe22sGLT6bTGAuXeNVyYIv3ctsYWyH0EjoqpXGHF8lWpGKhJO2qOqB6M0xTHqAOTbK2JFtFU95PAjt16xYzZtIJsfZDhV8o83ZmPmmeA7MLt9uPe6kJYH9x0q3IkJEVRl7xrI4hZ3POJRGjgq8a1tNx5vWLv1J-OaxMJffVvPLqXdHz_B7b_1MRUqPxUHWyoegO4MecVMrWcOm8oMK7yJwZNw5ww907beemmFMvuicSZ4rNATYyqiLcqSijnx-X0PhQ4w6bGUZWlMZhyBCEGZJn9-r2Ot-k3aBUBy6PL2XnvyYLAYQmi7tKZ6jMvOZVrtgBRDBGsBrDs4coGY8G1lpPFF9kZZ03lZw_4M34Q2rBM4O-FYIjY5Jsw40CLxBkWqrEdog9A8IinBtjpyk049aBcT0mGF-azR77F47AK_9E0Fkigu97vja8q2wvwIiUmMg6WN_9mdkZSQelFrmyW4EEEOmIE6R4kj0hCd4v8BVjJouKcAlre422EAy74jhtJwoyagUjUJ8WHT9EurXTEl9L4LaOd_JmdMOk8SV8jA_s9iGx_W9jin9Z6y6JzLUkCRYjRSd4CC9STlvPpOK1GlXT_JVv3ni5it-jB95CTp8iZanzuq75TzBmxdWX1sk2l51-p4jBO6cPhto86WNkKWQieF0rpIDsfFqAgp5K7ynf_gnhAcVK0ju1_uLEJVEbo6SSHBnCvGu6xLnM2vA=w671-h894-s-no?authuser=0 "
+    class="img-fluid mx-auto d-block border border-secondary p-4 custom-padding rounded mx-auto d-block"
+    alt= "Profile, close up of Rocco with his eyes wide and on alert. He wears his blue collar, is sitting on a blue and white striped couch and his brown eyes are wide as he looks across the sage green room.">
+     
+     8<img src="https://lh3.googleusercontent.com/pw/ADCreHeCOudLYyv3Jr3v8uQ7vr5vhWsts0RxOKCz4-A5q8YzhZUzyAg4fnHQe8Ya-9DsCyaNoAiXIjg06UFpUJuC8T-FhogTEWqkEtGhvaqfgqkq8odwlAAyYCoEM7RF8_pdgStpDxikULu2du_uURlFpszyuBx9zW4qDcmxuIJqQY3s4l9KxM9lOu7ci5wChdBR-Mjh5onURupuW_hFYF93f3gZFm0NEoM5OEF7SbeIYz3wSKK04gx0wakp5TPFa_OQoKhmdKyg4LFHyI6x1U-j4pBMUkfEOtUBpgMYNhQRYkLuySCXjwhlESz8bS0E0euZSjw-T3WE1u7KFkuZ3Eqk5ixWO1gad_S3fsrD-UA_Tmw2X7JqKfvATvGfNePWOdZNMg5XXK2dXIHnKOzUFDuD4NBPoNVmgT3yN1C9rr7n0kwcmxEbnJmXKB0jGLT10_RHdwjW67B35YhD0vnYN-QGilWGt5UPm669cn9m1cbTo7PIUDSl9lkogawDHhBN9JNaqgvh9b-wAbrde0AfPykbJZwwdOMFMIQf4cvzwEyVlCXJZ6_F6mK26pCPjkK_ZHF6678nJhnYXCBxtmw_TyzrP9ZtWgAE2SaeubIBhI5dhEuSBPSNm038-TWizgZUBAZjgDXSwBdm_KM2sRAuHLe_miS2G1IHmJpr3ViNMv2xyN_yNJKsE7rQMd1aRh-sBgV2kmpjr6dfnagmuGxGYeLJx_4uoUzHp9q8HVc7OyrTNPuB_Bogqdvl-RM_Ap5Zoc8ytiNgN1yk35AONEn2YVzFZHNCk9RLQpbkmoSryDIsC61Q_BRo6dMAtg4Mlr9MF8Ma0ZhCRMsthCZzU_xdQiae435HOr5nWd-6LMd-NQq1xRaQXHcLoAjGb4QPrWqAd6qkH1Er5ZpiuKh8X1MmujV12_ijoA=w671-h894-s-no?authuser=0 "
+    class="img-fluid mx-auto d-block border border-secondary p-4 custom-padding rounded mx-auto d-block"
+    alt= "Rocco, facing a closed, white wrought iron screened door, showing a porch and light and vegetation outside. Inside Rocco sits on a wood floor, and gazes out at the world going by outside.">
+     
+     9<img src="https://lh3.googleusercontent.com/pw/ADCreHe9XtDvo6IdxMQYmGMrgDDfteSFDcmjMjpw5XiPJqPkpXeQbKuUHMKwyES6-hywz5SB4G5Fd5GZEBcYpE7x9CbjObbyQw6IluT3brof4jeegEiXPiDiV5oj5TDZCgTeF8oN7RRgFF7oiTLr94vkNqIW5jFfDLjrK07MzXcfQQ06Q_y3EhY7Tmda24d49D7N9IsIO-UJOtdZPHnoVKNpqli4wwY8im6kkUYkQlhIOdRkJYolBBLGZ4_iueZPluaU1Oq_gv5T_vA5Y3go8r7Cu8Ope0SXYKeM3n4SF0h7p0-mw0zkk3u79Mkjwek9Gh8R-SThIC7_xp_aKYAueS2uQ8LA7QSfGfIJLGBSltsaQZX14xkR4vZeBQm5hLL7oTsvGDCGdQofMax1kYl2AeNhvabplGQ39Sg7LEjPJoQdo3DH3Ok2CcnyHFuBTRJr0BO7HzgbtCTehpurbMkgMHrz3XMNvsXH9cdrSWMnOEpy91nDOMlaY9F_MGi3CrFguwjlbLzto1guXUluh4JN16gO2hGaqkjKr9bcyHdGajeJurvaF8dvRrkIxC0hMyyu2bMMF_hrEbL1iNSuP_hk64BLF-RntbYW7DTS4_HoxNywPbG75iQxdWdt4YLE1rnd7pvb6Ra4qKrJkQ1Nj7NGs2OgARcJMSuCs86ax6n8WW5KstWPSVp1eTIBiC7XyRLbnYvoDs1pMhfl1iEFFVrniGQ3SKUZKNiRDX5I_8n6vH1xqZTi2gdH__CBveQY8gt1801-x4BTSwIXiC4IbIXL8didgFTEso2Z-VXUG0-375EfNFr96G3e7AOQeYaDUADdWaA1DwyqULNJIWbTYN4SNqjUAWDkSxHtmndxn2L6Da6k-yY2fWHD--fR6_PzV19nXUNij3-Jd2Y-uhMGKZtftyORAj9wmg=w671-h894-s-no?authuser=0 "
+    class="img-fluid mx-auto d-block border border-secondary p-4 custom-padding rounded mx-auto d-block"
+    alt= "A close up of Rocco, a 3/4 view of his face and eyes, as he lays with his head between his paws, on linens, and a towel.  He looks pensively at the camera with big brown eyes. His nose is black and there is a stripe of white that goes from his mouth to his forehead">
+     
+     10<img src="https://lh3.googleusercontent.com/pw/ADCreHeEyGQXOyk5BCYgaZq-Kr0VTNBfmFgYrNVKgfIYzlXL7Bs4IhE-75Azt9ocTnVx54idn04FRFGlIvij6WVTNFAvZN7ujsn10hjJ4PzwFgG_7qaH_lTB25UlCToIeAugp8ogv4yCm3dJYSH7OaT8vxkEPNbJLf28I-oHOCgOcqeZ0HpjPd66jlnjC57XUsmFXPplQiM1S0AYKetIOzx6xJRckLeZLGbf8Ubfuxqys2TYIEmvnRSiV7WTGB6h7nToujCOoVaV82K9ojDPzGUeTKjIbursbDgO8x2yGBPkfCRgJPvhcEops0JQqI6HCw4Bh7mCEiWA5whO6h5CvaRwEGI5RRnYMxYEfjr1v_FlC6AmtPxSeH8xH_XJI-K0Lkr9iYqXHYk1p2mT4_jaB30J3manUehgXzQTVVq4VqQY42csKQpLKnS2YNejjWYEkMC_Y6Myj7nmJpMzMs1stzJOLiruGPd1XUdlWoRYeI0K5JcJco_4U8dmKYRbXR2PBbac13KaM3977q5LcOWbc-HizDhmNaf4yFN9O3rKMsKvSxfNX_eINpsVV4vQo-EJW1gO9m_KeaJ4r5qG86rePEs_Q4_zzlvbEIRmGiTxvqbRXYdHY7gdTwsuWqEdvXW9CIZVL3H4yF4-B7jkJcQvcQbN9pkx-Z9y5BUuiR1tWccGJM1Skb43GMkf3oH8WBGDmlPinZc6p6bmpQoyUZfOB6aqNLiXVEpmG8jCRktatbqxMxSIQBFxQls2caCQ2f-cw6qDiQi_SXYUgopbi3Tn0aewwGbQK47fvDo2ZEkx566DqT9WquwUvE9j3Ybu5cuK2yeL9Z96l1ffiJ2BTDbRyd55D5XaZTxMKQsWyKG68wg50ZMzL7J5892rolZN4QdEf0lf5cAb27JN-g3xZV-OImB7axl9_5Q=w879-h879-s-no?authuser=0 "
+    class="img-fluid mx-auto d-block border border-secondary p-4 custom-padding rounded mx-auto d-block"
+    alt= "Rocco sitting on a blue an white striped couch, with his face right in the camera, wearing a pink and white chef's hat, and his tags on his neck. He smiles, showing his funky teeth.">
+  
+  
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@2.11.6/dist/umd/popper.min.js"></script>
+
+</body>
+</html>
