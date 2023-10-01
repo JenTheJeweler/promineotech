@@ -5,65 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 09 Bootstrap</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
-<body>
-   
+<body
+  class="bg-secondary-subtle " >
     
-
-<style>
-    body {
-            background-color: #e7e9dd; 
-        }
-    .custom-bg-color {
-        background-color: #4b26b3;
-    }
-    .custom-text-color {
-    color: #e7e9dd 
-    }
-    
-    .custom-padding {
-    padding: 20px; 
-    background-color: #6c757d 
-    }
-
-</style>
-
 <nav class="navbar navbar-expand-lg bg-secondary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">HOME</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Photos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Important Information</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown link
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Photos</a></li>
-              <li><a class="dropdown-item" href="#">About</a></li>
-              <li><a class="dropdown-item" href="#">Important Information</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="HomepageWeek09.html">HOME</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Photos.html">Photos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Important Information.html">Important Information</a>
+        </li>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Photos.html">Photos</a></li>
+            <li><a class="dropdown-item" href="About.html">About</a></li>
+            <li><a class="dropdown-item" href="Important Information.html">Important Information</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
+<div class="container bg-warning-subtle p-4 ">
+  
+  <p class="text-center ">Rocco is a dog of extrodinary talents. He is cute, always sniffing around and loves to play games.  
+    His favorite game is Tug of war. Rocco was found in a San Antonio Home Depot parking lot. Abandoned but undaunted, he went
+    up to a human who gave him water and then never left her side. That was 8 years ago, and veterinarians guessed that he 
+    was anywhere form 1-3 years old when he was found that day. 
+     He communicates that he wants a treat by smacking his lips while sticking his toungue out a little bit. 
+     He does not chase after balls unless he is inside on a rainy day because he is just more sophisticated than one who would mindlessly run after a ball over and over.
+    He prefers to look for live animals to focus his prey drive on (although he is never allowed to act on these impulses.)  Rocco is just as selective about his
+    canine friends as he is about his curricular activities. He in fact prefers the company of people over other dogs, as he typically wants to be the Prince 
+    of whatever social interaction he engages in, and most other dogs do not understand this heirarchy. Rocco loves (mostly) all people and especially children. 
+    He is most likely a descendant of some distant past king and lives his life accordingly.</p>
+</div>
+
+<form>
+  <div class="text-center bg-secondary padding">
+  <h1>Join the Rocco Fan Club!</h1>
+  <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Please tell us why you love Rocco!</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <div class="mb-3">
+      <label for="exampleFormControlSelect1" class="form-label">Choose your update frequency</label>
+      <select class="form-select" id="exampleFormControlSelect1">
+          <option>Daily</option>
+          <option>Bi-Weekly</option>
+          <option>Weekly</option>
+          <option>Fort-nightly</option>
+          <option>Monthly</option>
+      </select>
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+</form>
   
   
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@2.11.6/dist/umd/popper.min.js"></script>
 
 </body>
