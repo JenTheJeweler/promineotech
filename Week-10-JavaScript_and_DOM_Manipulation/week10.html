@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week10.js</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+</head>
+<body> 
+    
+  <div class="container mt-5">
+    <h1>Ice Cream Flavors</h1>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Flavor</th>
+                <th>One Scoop</th>
+                <th>Two Scoops</th>
+                <th>Three Scoops</th>
+            </tr>
+        </thead>
+        <tbody id="iceCreamTableBody">
+            <!-- Table rows  added here in the .js file -->
+        </tbody>
+    </table>
+    <form id="iceCreamForm">
+        <div class="mb-3">
+          <!-- adds margin -->
+            <label for="newFlavor">New Flavor</label>
+            <input type="text" class="form-control" id="newFlavor" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+      
+    
+    <script src="week10.js"></script> 
+</body>
+</html>
