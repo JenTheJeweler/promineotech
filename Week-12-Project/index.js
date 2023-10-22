@@ -77,21 +77,21 @@ document.addEventListener("DOMContentLoaded", () => {
     // }
 
     // Update - Modify existing seed entry
-    // function updateSeedEntry() {
-    //     let id = $("#updateId").val()
+    function updateSeedEntry() {
+        let id = $("#updateId").val()
       
-    //     $.ajax(`${url_endpoint}/${id}`, {
-    //       method: 'PUT',
-    //       data: {
-    //         commonName: $('#commonName').val(),
-    //           latinName:$('#latinName').val(),
-    //           color:$('#color').val(),
-    //           sunShade:$('#sunShade').val(),
-    //           plantingSeason:$('#plantingSeason').val(),
-    //       }
-    //     })
-    //   }
-    //   $('#updateSeedEntry').click(updateSeedEntry)
+        $.ajax(`${url_endpoint}/${id}`, {
+          method: 'PUT',
+          data: {
+            commonName: $('#commonName').val(),
+              latinName:$('#latinName').val(),
+              color:$('#color').val(),
+              sunShade:$('#sunShade').val(),
+              plantingSeason:$('#plantingSeason').val(),
+          }
+        })
+      }
+      $('#updateSeedEntry').click(updateSeedEntry)
       
     // 
     // Delete - Remove seed entry
