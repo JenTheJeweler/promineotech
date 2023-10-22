@@ -1,0 +1,40 @@
+{
+  "seed-list":[
+  {
+  "commonName": "Zinnia",
+  "latinName": "Zinnia Elegans",
+  "color": "Magenta",
+  "sunShade": "sun",
+  "season": "Spring"
+ },
+ {
+  "commonName": "commonName",
+  "latinName": "latinName",
+  "color": "color",
+  "sunShade": "sunShade",
+  "season": "season"
+ },
+ {
+  "commonName": "commonName ",
+  "latinName": "latinName ",
+  "color": "color ",
+  "sunShade": "sunShade ",
+  "season": "season "
+  
+ },
+ {
+  "commonName": "commonName ",
+  "latinName": "latinName ",
+  "color": "color ",
+  "sunShade": "sunShade ",
+  "season": "season "
+ },
+ {
+  "commonName": "commonName ",
+  "latinName": "latinName ",
+  "color": "color ",
+  "sunShade": "sunShade ",
+  "season": "season "
+ }
+]
+}
