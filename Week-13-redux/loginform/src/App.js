@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css'; 
-import Navigation from './Navigation';
-import LoginForm from './LoginForm';
+import Navigation from './Navigation.jsx';
+import LoginForm from './LoginForm.jsx';
 
 function App() {
   return (
@@ -29,7 +29,7 @@ export default App;
 //     <div className="App">
 //       <header className="App-header">
 //         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
+//         <p>https://legacy.reactjs.org/docs/jsx-in-depth.html#:~:text=User%2DDefined%20Components%20Must%20Be%20Capitalized&text=We%20recommend%20naming%20components%20with,before%20using%20it%20in%20JSX.
 //           Edit <code>src/App.js</code> and save to reload.
 //         </p>
 //         <a
