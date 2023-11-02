@@ -1,12 +1,14 @@
 import React from 'react';
+import Navigation from './components/Navigation.jsx';
+import LoginForm from './components/LoginForm.jsx';
+import '/node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css'; 
-import Navigation from './Navigation.jsx';
-import LoginForm from './LoginForm.jsx';
 
 function App() {
   return (
     <div>
       <Navigation/> 
+      <button className="btn btn-primary">test</button>
       <div className="center"> 
         <LoginForm /> 
       </div>

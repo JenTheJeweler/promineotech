@@ -3,7 +3,7 @@
 //3.Style the component using the default generated CSS file.
 
 import React from 'react';
-import './App.css';
+
 
 
 function LoginForm() {
@@ -12,7 +12,9 @@ function LoginForm() {
       <h3>Log In</h3>
       <input type="text" placeholder="Username" />
       <input type="password" placeholder="Password" />
+      <button  className='btn btn-primary'>Test</button>
     </div>
+  
   );
 }
 

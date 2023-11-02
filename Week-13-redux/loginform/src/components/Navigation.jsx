@@ -3,7 +3,6 @@
 
 
 import React from 'react';
-import './App.css'; 
 
 function Navigation() {
   return (
@@ -17,16 +16,7 @@ function Navigation() {
   );
 }
 
-function App() {
-  return (
-    <div>
-      <Navigation />
-      <div className="center"> 
-        <LoginForm /> 
-      </div>
-    </div>
-  );
-}
+
 
 export default Navigation;
 
