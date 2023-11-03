@@ -11,7 +11,7 @@
 
 /* Styling for the navigation bar */
 .navbar {
-  background-color: #333;
+  background-color: #333333;
   padding: 10px 0;
   color: white;
 }
@@ -21,19 +21,20 @@
   padding: 0;
 }
 
-.navbar li {
+.navbar li { 
   display: inline;
   margin-right: 10px;
 }
-
+/* Makes Navbar all in a line */
 .navbar a {
-  text-decoration: none;
-  color: white;
+  text-decoration:  underline #ff28c9;
+  color: rgb(96, 75, 233)
 }
+/* color of navbar text */
 
 /* Styling for the login form */
 .login-form {
-  border: 1px solid #ccc;
+  border: 1px solid #941010;
   padding: 20px;
   width: 300px;
   margin: 0 auto;
@@ -42,7 +43,8 @@
 
 .login-header {
   border-bottom: 1px solid #ccc;
-  padding: 10px 0;
+  padding: 10px 0;  
+  /* Creates login header */
 }
 
 .login-form input {
