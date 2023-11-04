@@ -1,4 +1,4 @@
-//when the DOM loads, then load the .Js file:
+
 
     const url_endpoint = "http://localhost:3000/seed-list";
 
