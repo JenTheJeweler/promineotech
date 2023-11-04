@@ -1,40 +1,52 @@
 {
-  "seed-list":[
-  {
-  "commonName": "Zinnia",
-  "latinName": "Zinnia Elegans",
-  "color": "Magenta",
-  "sunShade": "sun",
-  "season": "Spring"
- },
- {
-  "commonName": "commonName",
-  "latinName": "latinName",
-  "color": "color",
-  "sunShade": "sunShade",
-  "season": "season"
- },
- {
-  "commonName": "commonName ",
-  "latinName": "latinName ",
-  "color": "color ",
-  "sunShade": "sunShade ",
-  "season": "season "
-  
- },
- {
-  "commonName": "commonName ",
-  "latinName": "latinName ",
-  "color": "color ",
-  "sunShade": "sunShade ",
-  "season": "season "
- },
- {
-  "commonName": "commonName ",
-  "latinName": "latinName ",
-  "color": "color ",
-  "sunShade": "sunShade ",
-  "season": "season "
- }
-]
+  "seed-list": [
+    {
+      "id": 1,
+      "commonName": "Zinnia",
+      "latinName": "Zinnia Elegans",
+      "color": "Orange",
+      "sunShade": "Sun",
+      "plantingSeason": "Summer"
+    },
+    {
+      "id": 2,
+      "commonName": "Bachelor Buttons",
+      "latinName": "Centaurea cyanus",
+      "color": "periwinkle",
+      "sunShade": "Sun",
+      "plantingSeason": "Summer"
+    },
+    {
+      "id": 3,
+      "commonName": "Pansies",
+      "latinName": "Viola tricolor",
+      "color": "purple/yellow",
+      "sunShade": "Sun",
+      "plantingSeason": "Spring"
+    },
+    {
+      "id": 4,
+      "commonName": "Five Spot",
+      "latinName": "Nemophila maculata",
+      "color": "white/blue",
+      "sunShade": "part shade",
+      "plantingSeason": "Summer"
+    },
+    {
+      "id": 5,
+      "commonName": "Black Eyed Susan",
+      "latinName": "Rudbeckia hirta",
+      "color": "Yellow/Black ",
+      "sunShade": "Sun",
+      "plantingSeason": "Summer"
+    },
+    {
+      "id": 6,
+      "commonName": "Marigold",
+      "latinName": "Tagetes patula",
+      "color": "Orange",
+      "sunShade": "Sun",
+      "plantingSeason": "Summer"
+    }
+  ]
 }

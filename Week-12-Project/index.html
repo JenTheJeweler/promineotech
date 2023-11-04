@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seed List 2023</title>
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container">
@@ -12,6 +12,7 @@
         <table class="table">
             <thead>
                 <tr>
+                    <th>Id</th>
                     <th>Common Name</th>
                     <th>Latin Name</th>
                     <th>Color</th>
@@ -29,7 +30,11 @@
         </table>
 
         <form id="add-seed-form">
+            <h3>Add Seed Entry</h3>
             <div class="form-row">
+                <div class="form-group col">
+                <input type="text" class="form-control" id="id" placeholder="Id #" required>
+                </div>
                 <div class="form-group col">
                     <input type="text" class="form-control" id="common-name" placeholder="Common Name" required>
                 </div>
@@ -48,15 +53,20 @@
                 <div class="form-group col">
                     
                     <button type="submit" class="btn btn-primary">Add</button>
-                    <button class="btn btn-danger delete-seed">Delete</button>
+                    <!-- <button class="btn btn-danger delete-seed" id="submitseeds" >Delete</button> -->
                 
                 </div>
             </div>
         </form>
+<br>
 
-        <form id="edit-seed-form">
-            <input type="hidden" id="edit-seed-id" value="">
+        <form id="edit-seed-id">
+            <h3>Edit Seed Entry</h3>
+            
             <div class="form-row">
+                <div>
+                    <input type="text" class="form-control" id="edit-id" placeholder="Id #" required>
+                </div>
                 <div class="form-group col">
                     <input type="text" class="form-control" id="edit-common-name" placeholder="Common Name" required>
                 </div>
@@ -73,7 +83,7 @@
                     <input type="text" class="form-control" id="edit-planting-season" placeholder="Spring/Fall" required>
                 </div>
                 <div class="form-group col">
-                    <button type="submit" class="btn btn-primary">Update</button>
+                    <button type="submit" class="btn btn-primary" id="updateSeedEntry">Update</button>
                 </div>
             </div>
         </form>

@@ -1,0 +1,89 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seed List 2023</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Seed List 2023</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Common Name</th>
+                    <th>Latin Name</th>
+                    <th>Color</th>
+                    <th>Sun or Shade</th>
+                    <th>Planting Season</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="seed-list">
+                <!-- Seed entries will be added here dynamically
+            ****I want these to go across the page, 
+            under the table headings after clicking the 'add' buttton... 
+            not sure why its not working -->
+            </tbody>
+        </table>
+
+        <form id="add-seed-form">
+            <div class="form-row">
+                <div class="form-group col">
+                    <input type="text" class="form-control" id="common-name" placeholder="Common Name" required="">
+                </div>
+                <div class="form-group col">
+                    <input type="text" class="form-control" id="latin-name" placeholder="Latin Name" required="">
+                </div>
+                <div class="form-group col">
+                    <input type="text" class="form-control" id="color" placeholder="Color" required="">
+                </div>
+                <div class="form-group col">
+                    <input type="text" class="form-control" id="sun-shade" placeholder="Sun/Shade" required="">
+                </div>
+                <div class="form-group col">
+                    <input type="text" class="form-control" id="planting-season" placeholder="Spring/Fall" required="">
+                </div>
+                <div class="form-group col">
+                    <!-- NOTE Changed the id of your button, ID's must always be a unique name -->
+                    <!-- button type for this form is set to submit which your JS will look for -->
+                    <button type="submit" id="add-seed-form-submit-button" class="btn btn-primary">Add</button>
+                    <button class="btn btn-danger delete-seed">Delete</button>
+
+                </div>
+            </div>
+        </form>
+
+        <form id="edit-seed-form">
+            <input type="hidden" id="edit-seed-id" value="">
+            <div class="form-row">
+                <div class="form-group col">
+                    <input type="text" class="form-control" id="edit-common-name" placeholder="Common Name" required="">
+                </div>
+                <div class="form-group col">
+                    <input type="text" class="form-control" id="edit-latin-name" placeholder="Latin Name" required="">
+                </div>
+                <div class="form-group col">
+                    <input type="text" class="form-control" id="edit-color" placeholder="Color" required="">
+                </div>
+                <div class="form-group col">
+                    <input type="text" class="form-control" id="edit-sun-shade" placeholder="Sun/Shade" required="">
+                </div>
+                <div class="form-group col">
+                    <input type="text" class="form-control" id="edit-planting-season" placeholder="Spring/Fall" required="">
+                </div>
+                <div class="form-group col">
+                    <button type="submit" class="btn btn-primary">Update</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./index.js"></script>
+
+
+</body></html>
