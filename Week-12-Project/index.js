@@ -49,22 +49,15 @@
             }
             )
 
-    // Update - Modify existing seed entry
-    const editId = document.getElementById("id").value;
-    const commonName = document.getElementById("common-name").value;
-    const latinName = document.getElementById("latin-name").value;
-    const color = document.getElementById("color").value;
-    const sunShade = document.getElementById("sun-shade").value;
-    const plantingSeason = document.getElementById("planting-season").value;
-
+    
 
     function updateSeedEntry() {
-        let id = $("#edit-seed-id").val()
+        let id = $("#edit-id").val();
       
         $.ajax(`${url_endpoint}/${id}`, {
           method: 'PUT',
           data: {
-              id: $('edit-id').val(),
+              id: $('#edit-id').val(),
               commonName: $('#edit-common-name').val(),
               latinName:$('#edit-latin-name').val(),
               color:$('#edit-color').val(),
@@ -75,7 +68,7 @@
      }
       $('#updateSeedEntry').click(updateSeedEntry)
 
-      //sanity check, check all data, correct it.
+      //check all data, correct it.
     // 
     // Delete - Remove seed entry
     function deleteSeedEntry (id) {

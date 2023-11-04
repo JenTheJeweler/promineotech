@@ -42,11 +42,11 @@
     },
     {
       "id": 6,
-      "commonName": "Marigold",
-      "latinName": "Tagetes patula",
-      "color": "Orange",
-      "sunShade": "Sun",
-      "plantingSeason": "Summer"
+      "commonName": "Scarlet Geranium",
+      "latinName": "Pelargonium inquinans",
+      "color": "Red",
+      "sunShade": "shade",
+      "plantingSeason": "spring"
     }
   ]
 }
