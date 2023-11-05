@@ -1,0 +1,60 @@
+{
+   "NicCageMovies": [
+        {
+            "id": 1,
+            "movieName": "Adaptaion.",
+            "movieYear": "2002",
+            "director":"Spike Jonze",
+            "img": "movie-app/src/components/Images/Adaptation.2002.jpg",
+            "rating": ""
+          },
+          {
+            "id": 2,
+            "movieName": "Face/Off",
+            "movieYear": "1997",
+            "director":"John Woo",
+            "img": "movie-app/src/components/Images/FaceOff1997.jpg",
+            "rating": ""
+          },
+          {
+            "id": 3,
+            "movieName": "Grande Isle",
+            "movieYear": "2019",
+            "director":"Stephen Campanelli",
+            "img": "movie-app/src/components/Images/GrandeIsle2019.jpg",
+            "rating": ""
+          },
+          {
+            "id": 4,
+            "movieName": "Pig",
+            "movieYear": "2021",
+            "director":"Michael Sarnoski",
+            "img": "movie-app/src/components/Images/Pig2021.jpg",
+            "rating": ""
+          },
+          {
+            "id": 5,
+            "movieName": "Renfield",
+            "movieYear": "2023",
+            "director":"Chris McKay",
+            "img": "movie-app/src/components/Images/Renfield2023.jpg",
+            "rating": ""
+          },
+          {
+            "id": 6,
+            "movieName": "The Unbearable Weight of Massive Talent",
+            "movieYear": "2023",
+            "director":"Tom Gormican",
+            "img": "movie-app/src/components/Images/TheUnbearableWeightofMassiveTalent2022.jpg",
+            "rating": ""
+          },
+          {
+            "id": 7,
+            "movieName": "Willie's Wonderland",
+            "movieYear": "2021",
+            "director":"Kevin Lewis",
+            "img": "movie-app/src/components/Images/Willie'sWonderland2021.jpg",
+            "rating": ""
+          }
+    ]
+}
