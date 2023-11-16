@@ -24,7 +24,7 @@ export default function App(){
       content: 'whatever, whatever.',
     },
     {
-      id: 1,
+      id: 3,
       title: 'The last Post',
       date: '4-10-2020',
       content: 'My last post.',

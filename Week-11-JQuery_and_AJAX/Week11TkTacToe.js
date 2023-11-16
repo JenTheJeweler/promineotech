@@ -24,7 +24,8 @@
 
 // 
 $(document).ready(function() {
-    // Constants to represent player symbols
+    // Constants to represent player symbols telling the 
+    //game that there is and X and an O
     const PLAYER_X = 'X';
     const PLAYER_O = 'O';
 

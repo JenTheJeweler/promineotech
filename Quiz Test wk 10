@@ -1,0 +1,20 @@
+let paragraphId = 0;
+
+document.getElementById('p-button').addEventListener('click', () => {
+  // Locate the parent div
+  let parent = document.getElementById('p-div');
+
+  // Get the text entered into the input element
+  let inputText = document.getElementById('p-input').value;
+
+  // Create a new paragraph element
+  let newElement = document.createElement('p');
+  newElement.textContent = inputText;
+  newElement.setAttribute('id', 'paragraph-' + paragraphId++);
+
+  // Append the new paragraph to the parent div
+  parent.appendChild(newElement);
+
+  // Clear out the input box after adding the element
+  document.getElementById('p-input').value = '';
+});

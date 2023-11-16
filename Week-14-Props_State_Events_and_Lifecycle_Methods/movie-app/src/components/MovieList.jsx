@@ -4,7 +4,7 @@
 import React from "react";
 import MovieData from "./Movie";
 
-render( )
+render ( )
  {
   return (
 
