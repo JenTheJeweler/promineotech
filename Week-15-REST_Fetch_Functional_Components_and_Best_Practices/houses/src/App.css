@@ -48,7 +48,7 @@ input {
 
 .flower-delete-button {
   font-size: rem;
-  width: 100px;
+  width: 50px;
   background-color:  orange;
   border: none;
   cursor: pointer;

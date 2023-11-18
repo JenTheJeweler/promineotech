@@ -10,10 +10,10 @@
 // Create a React component (or more, if needed) to represent the resource.
 // Make all forms and other necessary UI pieces their own components as reasonable.
 
-// ****In the name of complete transparency, here is the Chat gpt link that 
+// ****In the name of complete transparency, here is the Chat      gpt link that 
 //  I sourced all this code, and explanations from:  
 //  https://chat.openai.com/c/658c23d9-ae48-4278-a0ab-20ee1366d894
-//  I am learning, but I don't think I can say that I can code yet. 
+//  I am learning, but I don't think I can say that I can code yet. ****
 
 
 
@@ -82,13 +82,11 @@ function App() {
     const deleteFlower = async (flowerId) => {
       try {
 
-        const deleteURL = `${MOCK_API_URL}/${Flowers.id}`;
+        const deleteURL = `${MOCK_API_URL}/${flowerId}`;
         console.log('Deleting flower at:', deleteURL);
     
         const response = await fetch(deleteURL, {
-          method: 'DELETE',
-                  // const response = await fetch(`${MOCK_API_URL}/${flowerId}`, {
-        //   method: 'DELETE', // DELETE request to remove the flower
+          method: 'DELETE',  // DELETE request to remove the flower
         });
   
         if (response.ok) {
@@ -104,7 +102,11 @@ function App() {
         console.error('Error deleting flower:', error);
       }
     };
-
+      // Placeholder for updateFlower function
+      const updateFlower = (flowerId, updatedFlowerData) => {
+               // Logic to update flower data
+          console.log(`Updating flower ${flowerId} with data:`, updatedFlowerData);
+    };
 
 
     return (
@@ -117,15 +119,14 @@ function App() {
             for adding new flowers. */}
         {/* Display existing flowers */}
         {flowersData.map((flower) => (
-          <Flowers key={flower.id} flowersdata={flower} />
+          <FlowerCard
+          key={flower.id} 
+          flower={flower} //passes in each flower entry
+          deleteFlower={deleteFlower}
+          updateFlower={updateFlower} //passes updateFlower down as prop
+          
+          />
         ))}
-        {/* Render Flowers components for each flower in flowersData */}
-        
-        {/* Display existing flowers as FlowerCard components */}
-        {flowersData.map((flower) => (
-          <FlowerCard key={flower.id} flower={flower} deleteFlower={deleteFlower} />
-        ))}
-        {/* Render FlowerCard components for each flower in flowersData */}
       </div>
     );
     
