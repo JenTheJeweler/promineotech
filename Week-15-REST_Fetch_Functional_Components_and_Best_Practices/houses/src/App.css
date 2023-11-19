@@ -1,66 +1,110 @@
-.App {
+body {
   text-align: center;
+  background-color: rgb(247, 242, 253);
+  font-family: 'Glass Antiqua', cursive;
+  font-size: x-large;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Glass Antiqua', cursive;
+  
+}
+
+.add-flower-button {
+  background-color:  orange;
+  border: 3px solid orange;
+  border-radius: 10px;
+  font-family: 'Glass Antiqua', cursive;
+  
 }
 
 .flower-card {
-  max-width: 300px;
+  max-width: 600px;
   background-color: purple;
-  border: 3px solid orange;
+  border: 15px solid orange;
   border-radius: 10px; /* Adjust the radius to your preference */
   padding: 15px; /* Add padding for spacing inside the card */
   margin: 10px; /* Add margin for spacing between cards */
   color: white; /* Set text color */
   text-align: center;
-}
+} 
 
 .container {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  /* height: 100vh; Optional: Set a specific height for vertical centering */
+   align-items: center; 
+   /* height: 100vh; Optional: Set a specific height for vertical centering  */
 }
 
 .cards-wrapper {
   display: flex;
   flex-wrap: wrap; /* Allows cards to wrap if there are many */
-  /* gap: 20px; Optional: Adds space between cards */
+  justify-content: space-evenly;
+  max-width: 900px;
+  gap: 20px; 
 }
-/* Add vertical stacking to form elements */
-form {
-  display: flex;
-  flex-direction: column;
-}
+  /*Optional: Adds space between cards/*
+/*  */
 
+/* Add vertical stacking to form elements */
 /* Add spacing between form elements */
+
 label {
   margin-bottom: 10px;
+  display: flex;
+  
 }
 
-input {
+input,
+  textarea {
+    align-self: center; /* Centers inputs vertically */
   margin-bottom: 10px;
   padding: 5px;
 }
 
 .add-flower-button {
-  max-width: 100px;
+  max-width: 60px;
+  font-family: 'Glass Antiqua', cursive;
+  font-size: 16px;
 }
-
+.add-flower-button:hover {
+  transform: scale(1.1); /* Add a hover effect */
+}
 
 .flower-delete-button {
   font-size: rem;
   width: 50px;
   background-color:  orange;
-  border: none;
   cursor: pointer;
   font-size: 25px;
   color: purple; /* Adjust the color */
-  
+  border: 3px solid purple;
+  border-radius: 10px;
 }
-
 .flower-delete-button:hover {
   transform: scale(1.1); /* Add a hover effect */
 }
 
+.flower-update-button {
+  font-family: 'Glass Antiqua', cursive;
+  background-color: aqua;
+  font-size: 25px;
+}
+
+.flower-update-button:hover {
+  transform: scale(1.1); /* Add a hover effect */
+}
+
+.centered-header {
+  text-align: center;
+ 
+}
 
 
 

@@ -10,7 +10,7 @@
 // Create a React component (or more, if needed) to represent the resource.
 // Make all forms and other necessary UI pieces their own components as reasonable.
 
-// ****In the name of complete transparency, here is the Chat      gpt link that 
+// ****In the name of complete transparency, here is the Chat   gpt link that 
 //  I sourced all this code, and explanations from:  
 //  https://chat.openai.com/c/658c23d9-ae48-4278-a0ab-20ee1366d894
 //  I am learning, but I don't think I can say that I can code yet. ****
@@ -102,15 +102,39 @@ function App() {
         console.error('Error deleting flower:', error);
       }
     };
-      // Placeholder for updateFlower function
-      const updateFlower = (flowerId, updatedFlowerData) => {
-               // Logic to update flower data
-          console.log(`Updating flower ${flowerId} with data:`, updatedFlowerData);
-    };
+      // UPDATE:
+      const updateFlower = async (flowerId, updatedFlowerData) => {
+        try {
+          const updateURL = `${MOCK_API_URL}/${flowerId}`;
+          const response = await fetch(updateURL, {
+            method: 'PUT', // Use PUT method for updating
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(updatedFlowerData),
+          });
+      
+          if (response.ok) {
+            // Fetch updated data after successful update
+            const updatedResponse = await fetch(MOCK_API_URL);
+            const updatedData = await updatedResponse.json();
+            setFlowersData(updatedData);
+          } else {
+            throw new Error('Failed to update flower');
+          }
+        } catch (error) {
+          console.error('Error updating flower:', error);
+        }
+      };
+              //  console.log(`Updating flower ${flowerId} with data:`, updatedFlowerData);
+    //};
 
-
+  
     return (
       <div>
+        <h1 className="centered-header">My Garden</h1>
+        <h4 className="centered-header">Record, edit and delete your list of plants here to keep track of the growing season!  Happy Planting!
+        </h4>
         {/* Other components */}
         <AddFlowerForm addFlower={addFlower} />
         {/* Renders the AddFlowerForm component. */}
@@ -128,9 +152,9 @@ function App() {
           />
         ))}
       </div>
+      
     );
-    
-  }
+  } 
   
 
 export default App;

@@ -13,7 +13,7 @@ const UpdateFlower = ({ flower, updateFlower }) => {
   };
 
   const handleUpdate = () => {
-    updateFlower(editedFlower, editedFlower); // Pass the flower ID and updated data to the update function
+    updateFlower(editedFlower.id, editedFlower); // Pass the flower ID and updated data to the update function
   };
 
   return (
@@ -28,8 +28,43 @@ const UpdateFlower = ({ flower, updateFlower }) => {
           onChange={handleInputChange}
         />
       </label>
-      {/* Add other input fields similarly */}
-      <button onClick={handleUpdate}>Update</button>
+      <label>
+        Latin Name:
+        <input
+          type="text"
+          name="latinName"
+          value={editedFlower.latinName}
+          onChange={handleInputChange}
+        />
+      </label>
+      <label>
+        Color:
+        <input
+          type="text"
+          name="color"
+          value={editedFlower.color}
+          onChange={handleInputChange}
+        />
+      </label>
+      <label>
+        Sun or Shade:
+        <input
+          type="text"
+          name="sunShade"
+          value={editedFlower.sunShade}
+          onChange={handleInputChange}
+        />
+      </label>
+      <label>
+        Common Name:
+        <input
+          type="text"
+          name="plantingSeason"
+          value={editedFlower.plantingSeason}
+          onChange={handleInputChange}
+        />
+      </label> 
+       <button onClick={handleUpdate} className='flower-update-button'>Update</button> 
     </div>
   );
 };
