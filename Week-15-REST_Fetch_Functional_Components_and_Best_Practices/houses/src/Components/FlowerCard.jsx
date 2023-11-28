@@ -5,7 +5,7 @@ import UpdateFlower from './UpdateFlower';
 const FlowerCard = ({ flower, deleteFlower, updateFlower }) => {
     const [isEditing, setIsEditing] = useState(false);
     const [updatedFlower, setUpdatedFlower] = useState({ ...flower });
-    
+     console.log(updatedFlower)
     // Add useEffect to update the local state when the flower prop changes
     useEffect(() => {
     setUpdatedFlower({ ...flower });
@@ -23,6 +23,7 @@ const FlowerCard = ({ flower, deleteFlower, updateFlower }) => {
 
       const handleCancel = () => {
         setIsEditing(false);
+        console.log("should go away")
         setUpdatedFlower({ ...flower }); // Reset the local state to original data on cancel
       };
     
@@ -44,8 +45,10 @@ const FlowerCard = ({ flower, deleteFlower, updateFlower }) => {
       const handleUpdate = async () => {
         try {
           await updateFlower(updatedFlower.id, updatedFlower); // Send updated data to the API
+          
           setIsEditing(false); // Exit edit mode after successful update
           updateFlower(updatedFlower.id, updatedFlower); //Update the original flower state with the updated data
+          
         } catch (error) {
           console.error('Error updating flower:', error);
           // Handle error updating flower

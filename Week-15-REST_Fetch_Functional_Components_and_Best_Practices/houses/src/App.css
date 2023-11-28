@@ -1,20 +1,36 @@
+
 body {
   text-align: center;
+  color: rgb(48, 23, 23); /* Set text color */
   background-color: rgb(247, 242, 253);
   font-family: 'Glass Antiqua', cursive;
   font-size: x-large;
+  background-image: url('../public/background.jpg'
+  ); /* Path starts from public folder */
+  background-size: cover;
+  background-position: center;
 }
+
 
 form {
   display: flex;
   flex-direction: column;
   justify-content: center; /* Center vertically */
   align-items: center; /* Center horizontally */
-  margin-top: 50px;
-  margin-bottom: 50px;
+  background-color: rgb(225, 255, 196);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 10px; 
+  padding: 10px;
+  font-size: xx-large;
   font-family: 'Glass Antiqua', cursive;
-  
+  max-width:  300px; 
+  margin: 20px auto;
+  border: 5px solid orange;
+  border-radius: 10px;
 }
+
 
 .add-flower-button {
   background-color:  orange;
@@ -23,37 +39,47 @@ form {
   font-family: 'Glass Antiqua', cursive;
   
 }
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap if there are many */
+  justify-content: space-between;
+  padding: 10px;
+  /* max-width: 900px;
+  gap: 5px;  */
+}
+  
 
 .flower-card {
   max-width: 600px;
-  background-color: purple;
-  border: 15px solid orange;
+  background-color: rgb(214, 151, 214);
+  border: 15px solid rgb(255, 166, 2);
   border-radius: 10px; /* Adjust the radius to your preference */
   padding: 15px; /* Add padding for spacing inside the card */
   margin: 10px; /* Add margin for spacing between cards */
-  color: white; /* Set text color */
+  color: rgb(48, 23, 23); /* Set text color */
   text-align: center;
-} 
+
+  /* Media queries for fitting cards into different sized screens*/
+  flex-basis: calc(33.33% - 20px); /* Three cards in a row with a gap of 20px */
+  margin-bottom: 20px; /* Margin between rows */
+
+  /* Adjust for smaller screens */
+  @media screen and (max-width: 768px) {
+    flex-basis: calc(50% - 20px); /* Two cards in a row with a gap of 20px */
+    }
+
+  @media screen and (max-width: 480px) {
+    flex-basis: calc(100% - 20px); /* One card in a row with a gap of 20px */
+  } 
 
 .container {
   display: flex;
   justify-content: center;
-   align-items: center; 
-   /* height: 100vh; Optional: Set a specific height for vertical centering  */
+   align-items: center;  
+   height: 50vh; 
+   /*Optional: Set a specific height for vertical centering */
 }
-
-.cards-wrapper {
-  display: flex;
-  flex-wrap: wrap; /* Allows cards to wrap if there are many */
-  justify-content: space-evenly;
-  max-width: 900px;
-  gap: 20px; 
 }
-  /*Optional: Adds space between cards/*
-/*  */
-
-/* Add vertical stacking to form elements */
-/* Add spacing between form elements */
 
 label {
   margin-bottom: 10px;

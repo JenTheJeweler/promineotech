@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../App.css';
 
-const UpdateFlower = ({ flower, updateFlower }) => {
+const UpdateFlower = ({ flower, updateFlower, handleCancel }) => {
   const [editedFlower, setEditedFlower] = useState({ ...flower });
 
   const handleInputChange = (e) => {
@@ -14,6 +14,7 @@ const UpdateFlower = ({ flower, updateFlower }) => {
 
   const handleUpdate = () => {
     updateFlower(editedFlower.id, editedFlower); // Pass the flower ID and updated data to the update function
+    handleCancel();
   };
 
   return (

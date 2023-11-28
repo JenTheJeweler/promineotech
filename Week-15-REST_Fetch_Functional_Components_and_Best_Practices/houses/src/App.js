@@ -10,10 +10,7 @@
 // Create a React component (or more, if needed) to represent the resource.
 // Make all forms and other necessary UI pieces their own components as reasonable.
 
-// ****In the name of complete transparency, here is the Chat   gpt link that 
-//  I sourced all this code, and explanations from:  
-//  https://chat.openai.com/c/658c23d9-ae48-4278-a0ab-20ee1366d894
-//  I am learning, but I don't think I can say that I can code yet. ****
+// ****
 
 
 
@@ -21,7 +18,7 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
 import AddFlowerForm from './Components/AddFlowerForm';
-import Flowers from './Components/Flowers';
+//import Flowers from './Components/Flowers';
 import FlowerCard from './Components/FlowerCard';
 
 
@@ -31,7 +28,7 @@ function App() {
   //this code block sets a variable holding the API URL and 
   //sets up an empty state (flowersData) to hold the flower information 
   //obtained from the API/URL.
-
+console.log(flowersData)
   useEffect(() => { // Use Effect runs once when page loads.
     fetch(MOCK_API_URL) //fetch calls api and gets data
       .then((response) => response.json()) //.json() convert that data to json
@@ -118,13 +115,16 @@ function App() {
             // Fetch updated data after successful update
             const updatedResponse = await fetch(MOCK_API_URL);
             const updatedData = await updatedResponse.json();
-            setFlowersData(updatedData);
+            setFlowersData(updatedData)
+            console.log(updatedData)
           } else {
             throw new Error('Failed to update flower');
           }
         } catch (error) {
           console.error('Error updating flower:', error);
         }
+        // This is the proper way to add the new flower to state. -MV
+       // setFlowersData([...flowersData, updatedFlowerData])
       };
               //  console.log(`Updating flower ${flowerId} with data:`, updatedFlowerData);
     //};
@@ -133,7 +133,10 @@ function App() {
     return (
       <div>
         <h1 className="centered-header">My Garden</h1>
-        <h4 className="centered-header">Record, edit and delete your list of plants here to keep track of the growing season!  Happy Planting!
+        <h4 className="centered-header">Record, edit and delete your list of plants here to keep track of the growing season! 
+        <br></br>
+        <br></br>
+         Happy Planting!
         </h4>
         {/* Other components */}
         <AddFlowerForm addFlower={addFlower} />
@@ -142,6 +145,10 @@ function App() {
         {/* This allows the AddFlowerForm component to use the addFlower function 
             for adding new flowers. */}
         {/* Display existing flowers */}
+        
+        <div className = 'container'>
+        
+          
         {flowersData.map((flower) => (
           <FlowerCard
           key={flower.id} 
@@ -150,9 +157,11 @@ function App() {
           updateFlower={updateFlower} //passes updateFlower down as prop
           
           />
-        ))}
+          ))}
+          </div>
       </div>
       
+         
     );
   } 
   
