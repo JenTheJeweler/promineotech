@@ -65,8 +65,8 @@ const FlowerCard = ({ flower, deleteFlower, updateFlower }) => {
     
 
     return (
-      <div className="container">
-        <div className="cards-wrapper">
+      // <div className="container">
+      //   <div className="cards-wrapper">
           <div className="flower-card">
           {isEditing ?(
             <UpdateFlower 
@@ -103,8 +103,8 @@ const FlowerCard = ({ flower, deleteFlower, updateFlower }) => {
              </div>
             )}
         </div>
-      </div>
-   </div>
+  //     </div>
+  //  </div>
   );
 };
 

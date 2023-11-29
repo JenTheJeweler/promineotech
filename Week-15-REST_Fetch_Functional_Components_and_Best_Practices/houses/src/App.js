@@ -14,7 +14,7 @@
 
 
 
-
+//import all the components and react
 import React, {useEffect, useState} from 'react';
 import './App.css';
 import AddFlowerForm from './Components/AddFlowerForm';
@@ -31,7 +31,7 @@ function App() {
 console.log(flowersData)
   useEffect(() => { // Use Effect runs once when page loads.
     fetch(MOCK_API_URL) //fetch calls api and gets data
-      .then((response) => response.json()) //.json() convert that data to json
+      .then((response) => response.json()) //.json() converts the data to json
       .then((data) => setFlowersData(data)) // this updates flowersData in state.
       .catch((error) => console.error('Error fetching flowers:', error));
   }, [MOCK_API_URL]);
@@ -54,7 +54,7 @@ console.log(flowersData)
       });
       //this code block creates a function that sends a request to a specific 
       // API endpoint to add new flower data using the POST method, 
-      // with the details provided in newFlowerData.
+      // and provides the data in newFlowerData.
 
 
 
@@ -147,7 +147,7 @@ console.log(flowersData)
         {/* Display existing flowers */}
         
         <div className = 'container'>
-        
+          {/* <div classname = 'cards-wrapper'>  */}
           
         {flowersData.map((flower) => (
           <FlowerCard
@@ -159,7 +159,8 @@ console.log(flowersData)
           />
           ))}
           </div>
-      </div>
+          </div>
+      // </div>
       
          
     );
