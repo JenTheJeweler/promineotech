@@ -1,17 +1,14 @@
-
 body {
   text-align: center;
   color: rgb(48, 23, 23); /* Set text color */
-  font-family: 'Glass Antiqua', cursive;
+  font-family: "Glass Antiqua", cursive;
   font-size: x-large;
-  background-image: url('../public/background.jpg'
-  ); /* Path starts from public folder */
+  background-image: url("../public/background.jpg"); /* Path starts from public folder */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: rgb(247, 242, 253);
+  background-color: rgb(60, 48, 75);
 }
-
 
 form {
   display: flex;
@@ -22,93 +19,97 @@ form {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 10px;
-  margin-left: 10px; 
+  margin-left: 10px;
   padding: 10px;
   font-size: xx-large;
-  font-family: 'Glass Antiqua', cursive;
-  max-width:  300px; 
+  font-family: "Glass Antiqua", cursive;
+  max-width: 300px;
   margin: 20px auto;
   border: 5px solid orange;
   border-radius: 10px;
 }
 
-
 .add-flower-button {
-  background-color:  orange;
+  background-color: orange;
   border: 3px solid orange;
   border-radius: 10px;
-  font-family: 'Glass Antiqua', cursive;
-  
+  font-family: "Glass Antiqua", cursive;
 }
 
 .cards-wrapper {
- display: flex; 
- /*flex-wrap: wrap; /* Allows cards to wrap if there are many */
+  display: flex;
+  /*flex-wrap: wrap; /* Allows cards to wrap if there are many */
   justify-content: space-between;
-  padding: 10px; 
-   max-width: 900px;
-  gap: 5px;  
- } 
-  
-
-.flower-card {
-  box-sizing: border-box;
-  /* max-width: 600px; */
-  background-color: rgb(214, 151, 214);
-  border: 15px solid rgb(255, 166, 2);
-  border-radius: 10px; /* Adjust the radius to your preference */
-  padding: 15px; /* Add padding for spacing inside the card */
-  /* flex: 0 0 calc(300px - 20px); Approx. 3 inches wide with 20px margin */
-  width: calc(33.3% - 20px); /* Approx. 3 inches wide with 20px margin */
-  max-width: calc(300px - 20px); /* Maintain max-width */
-  min-width: 300px; 
-  height: calc(500px - 20px); /* Approx. 5 inches tall with 20px margin */
-  margin-top: 50px;
-  margin-bottom: 20px; /* Margin between rows */
-  margin-right: 20px; /* Margin between cards */
-  padding: 15px; /* Add padding for spacing inside the card */
-  color: rgb(48, 23, 23); /* Set text color */
-  text-align: center;
-  
+  padding: 10px;
+  max-width: 900px;
+  gap: 5px;
 }
 
-@media screen and (max-width: 1024px) {
-  .container {
-    max-width: 75vw;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  
-}
-
+/* //flex or grid */
 .container {
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
   justify-self: center;
-  align-items: center;  
-   height: 50vh; 
-   /*Optional: Set a specific height for vertical centering */
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  /*Optional: Set a specific height for vertical centering */
+  /* border: 5px solid red; */
+}
+.container-item {
+  border: 15px solid orange;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+}
+.flower-card {
+  box-sizing: border-box;
+  /* max-width: 600px; */
+  background-color: rgb(214, 151, 214);
+  border-radius: 10px; /* Adjust the radius to your preference */
+  padding: 8px; /* Add padding for spacing inside the card */
+  /* flex: 0 0 calc(300px - 20px); Approx. 3 inches wide with 20px margin */
+  width: calc(33.3% - 20px); /* Approx. 3 inches wide with 20px margin */
+  max-width: calc(300px - 20px); /* Maintain max-width */
+  min-width: 300px;
+  height: calc(450px - 20px); /* Approx. 5 inches tall with 20px margin */
+  margin-top: 20px;
+  margin-bottom: 20px; /* Margin between rows */
+  margin-right: 20px; /* Margin between cards */
+  padding: 15px; /* Add padding for spacing inside the card */
+  color: rgb(48, 23, 23); /* Set text color */
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 75vw;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
 }
 
 label {
   margin-bottom: 10px;
   display: flex;
-  
 }
 
 input,
-  textarea {
-    align-self: center; /* Centers inputs vertically */
+textarea {
+  align-self: center; /* Centers inputs vertically */
+  align-self: flex-end;
   margin-bottom: 10px;
   padding: 5px;
 }
 
 .add-flower-button {
-  max-width: 60px;
-  font-family: 'Glass Antiqua', cursive;
-  font-size: 16px;
+  max-width: 70px;
+  font-family: "Glass Antiqua", cursive;
+  font-size: 20px;
 }
 .add-flower-button:hover {
   transform: scale(1.1); /* Add a hover effect */
@@ -117,7 +118,7 @@ input,
 .flower-delete-button {
   font-size: rem;
   width: 50px;
-  background-color:  orange;
+  background-color: orange;
   cursor: pointer;
   font-size: 25px;
   color: purple; /* Adjust the color */
@@ -129,9 +130,11 @@ input,
 }
 
 .flower-update-button {
-  font-family: 'Glass Antiqua', cursive;
+  font-family: "Glass Antiqua", cursive;
   background-color: aqua;
   font-size: 25px;
+  border: 3px solid purple;
+  border-radius: 10px;
 }
 
 .flower-update-button:hover {
@@ -140,5 +143,4 @@ input,
 
 .centered-header {
   text-align: center;
- 
 }
