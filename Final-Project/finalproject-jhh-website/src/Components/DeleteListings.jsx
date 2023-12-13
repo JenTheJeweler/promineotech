@@ -6,7 +6,7 @@
 // DeleteListings
 
 import React, { useState, useEffect } from "react";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 import Logo from "./Logo";
 
 const DeleteListings = () => {
@@ -52,7 +52,7 @@ const DeleteListings = () => {
 
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Logo />
       <h1>Delete Listings</h1>
       <ul>

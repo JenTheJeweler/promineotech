@@ -6,7 +6,7 @@
 // Updatelistings
 
 import React, { useState, useEffect } from "react";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 import Logo from "./Logo";
 
 const UpdateListings = () => {
@@ -56,7 +56,7 @@ const UpdateListings = () => {
 
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Logo />
       <h1>Update Listings</h1>
       <ul>

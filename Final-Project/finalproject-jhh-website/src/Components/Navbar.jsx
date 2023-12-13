@@ -1,21 +1,21 @@
 //navagation bar to use on each page
-import { Link } from "react-router-dom";
-
+// import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <NavLink to="/about">About</NavLink>
         </li>
         <li>
-          <Link to="/resume">Resume</Link>
+          <NavLink to="/resume">Resume</NavLink>
         </li>
         <li>
-          <Link to="/shop-user-listings">Shop Now</Link>
+          <NavLink to="/shop-user-listings">Shop Now</NavLink>
         </li>
       </ul>
     </nav>

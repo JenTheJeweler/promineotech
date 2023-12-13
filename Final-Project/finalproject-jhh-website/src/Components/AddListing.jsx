@@ -4,7 +4,7 @@
 // Logo
 // AddListing
 import React, { useState } from "react";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 import Logo from "./Logo";
 
 const AddListing = () => {
@@ -54,7 +54,7 @@ const AddListing = () => {
 
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Logo />
       <form onSubmit={handleSubmit}>
         <label htmlFor="title">Title:</label>

@@ -5,7 +5,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 import Logo from "./Logo";
 
 const UserListings = () => {
@@ -61,7 +61,7 @@ const UserListings = () => {
   };
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Logo />
       <Link to="/about">About</Link>
 

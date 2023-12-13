@@ -9,7 +9,7 @@
 
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 import Logo from "./Logo";
 
 const AdminListings = () => {
@@ -44,7 +44,7 @@ const AdminListings = () => {
 
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Logo />
       {isAdmin ? (
         <div>

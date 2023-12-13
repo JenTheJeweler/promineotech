@@ -9,16 +9,16 @@
 // ShopNowButton
 
 import React from "react";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 import Logo from "./Logo";
 import SocialsButtons from "./SocialsButtons";
 import ShopUserListings from "./ShopUserListings";
-import ContactForm from "./ContactForm";
+// import ContactForm from "./ContactForm";
 
 const Home = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Logo />
       <SocialsButtons />
       <ShopUserListings />
